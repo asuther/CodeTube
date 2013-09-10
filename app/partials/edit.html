@@ -1,0 +1,18 @@
+<h2>Edit {{youtube_url}}</h2>
+<div id="ytapiplayer" >
+	You need Flash player 8+ and JavaScript enabled to view this video.
+</div>
+<br>
+<table id="timeline">
+	<tr>
+		<td ng-repeat="section in sections" style="width: {{section.percent_of_video}}%;" timeline-section 
+				data-start-time="{{section.start_time}}"
+				data-end-time="{{section.end_time}}">
+		<td>
+			No Sections Set
+		</td>
+	</tr>
+</table>
+<button end-section>End Section</button><br>
+<!-- <button seek-button ng-repeat="section in sections" my-time="{{section.start_time}}"></button> -->
+

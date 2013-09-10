@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<!-- jQuery + AngularJS -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>	
+
+    <!-- CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="app/css/style.css">
+	
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="vendor/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- SWF Object -->
+	<script type="text/javascript" src="vendor/js/swfobject.js"></script>
+	
+	<title>CodeTube</title>
+</head>
+<body >
+	<div ng-view id="body"></div>
+
+	<script type="text/javascript" src="app/js/controllers.js"></script>
+	<script type="text/javascript" src="app/js/directives.js"></script>
+	<script type="text/javascript" src="app/js/directives.fancyBox.js"></script>
+	<script type="text/javascript" src="app/directives/youtube.directive.js"></script>
+</body>
+</html>
