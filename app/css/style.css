@@ -1,8 +1,52 @@
-table#timeline {
+div#timeline {
+	position: relative;
 	width: 100%;
 	border: 1px solid black;
-	border-collapse: collapse;
+	display: inline-block;
+	height: 70px;
 }
-table#timeline td {
+div#timeline div {
+	position: relative;
 	border-right: 1px dotted gray;
+	float: left;
+	display: block;
+	overflow: hidden;
+	padding: 0px;
+	height: 70px;
 }
+div#timeline div .edit-section-button {
+	position: absolute;
+	right:0;
+	width: 30px;
+	height: 30px;
+    background:url('../images/gear.png') no-repeat right top;
+}
+div#timeline div:hover {
+	cursor: pointer;
+}
+div#timeline div#filler {
+	overflow: hidden;
+}
+.fancybox-div h4 {
+	text-align: center;
+}
+#defaultSlider {
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+input[type='range'] {  
+    -webkit-appearance: none;  
+    background-color: transparent;
+    border-top: 1px dashed gray;  
+    background:url('../images/line.gif') repeat-x left bottom;
+
+}  
+input[type=range]::-webkit-slider-thumb {  
+    -webkit-appearance: none;  
+    background-color: rgba(33,33,33,0.6);  
+    width: 15px;  
+    height: 35px; 
+    cursor: pointer; 
+}  
